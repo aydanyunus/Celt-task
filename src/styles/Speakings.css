@@ -1,0 +1,72 @@
+.speakings-wrapper {
+  padding: 50px 100px;
+}
+.speaking-header {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+.speaking-header h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.speaking-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+.speaking-items-wrapper .speaking-item {
+  background: #ffffff;
+  width: 32%;
+  height: auto;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.speaking-item .g-english-circle {
+  background: #4d83af;
+  color: #ffffff;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.g-english-circle .circle-content {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.link {
+  display: flex;
+}
+.link a,
+.link a:hover {
+  color: #ee7100;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+@media (max-width: 968.98px) {
+  .speaking-items-wrapper {
+    flex-direction: column;
+  }
+  .speaking-items-wrapper .speaking-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .speakings-wrapper {
+    padding: 20px;
+  }
+}

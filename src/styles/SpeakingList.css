@@ -1,0 +1,224 @@
+.speaking-list {
+  padding: 50px 100px;
+}
+.speaking-list-header {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+}
+.speaking-list-header h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.speaking-list-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.speaking-list-item {
+  background: #ffffff;
+  width: 32%;
+  height: auto;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 20px;
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.dot-btn {
+  position: relative;
+}
+.dots {
+  background: transparent;
+  color: #6c757d;
+  border: none;
+}
+#record-btn.record-btn {
+  background: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  color: #ee7100;
+  border: none;
+  font-size: 12px;
+  outline: none;
+  right: 20px;
+  top: 0;
+}
+#record-btn.record-btn:focus {
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.speaking-list-item .dot-btn svg {
+  color: #6c757d;
+}
+
+.modal .modal-content .modal-header .close {
+  display: none;
+}
+.modal .modal-content {
+  border: none;
+}
+.modal-title {
+  font-size: 18px;
+}
+.modal .modal-content .modal-footer {
+  justify-content: space-between;
+  border-top: none;
+}
+.modal .modal-content .modal-footer button {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.modal .modal-footer .right-btns button {
+  margin-left: 10px;
+  color: #ffffff;
+}
+.modal-title-wrapper,
+.modal-questions-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.modal-title-wrapper .title,
+.modal-questions-wrapper .question-title {
+  width: 100px;
+}
+.modal-questions-wrapper {
+  margin-top: 20px;
+}
+.modal-content .modal-body h5 {
+  font-size: 14px;
+}
+.questions .subject {
+  font-size: 18px;
+  font-weight: 800;
+}
+.questions .questions-list li {
+  position: relative;
+  padding-left: 20px;
+}
+.questions .questions-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #000000;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+}
+
+.dropdown-toggle.btn-rec-dropdown {
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown-toggle.btn-rec-dropdown:focus {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.audio-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.audio-btns .audio-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+}
+.audio-btns .audio-rec-btn {
+  background: #4db6ac;
+}
+.audio-btns .audio-stop-btn {
+  background: red;
+  margin-left: 10px;
+}
+
+.audio-rec-btn svg,
+.audio-stop-btn svg {
+  fill: #ffffff;
+}
+
+audio {
+  max-width: 100%;
+}
+
+#submit-modal .modal-header {
+  border-bottom: none;
+}
+#submit-modal .modal-content {
+  align-items: center;
+  text-align: center;
+}
+#submit-modal .modal-body svg {
+  width: 50px;
+  height: 50px;
+  fill: #4db6ac;
+}
+#submit-modal h1 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+#submit-modal p {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #6c757d;
+}
+#submit-modal .btn {
+  padding: 10px 25px;
+}
+
+@media (max-width: 968.98px) {
+  .speaking-list-items-wrapper {
+    flex-direction: column;
+  }
+  .speaking-list-items-wrapper .speaking-list-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .speaking-list {
+    padding: 20px;
+  }
+  .audio-btns {
+    flex-direction: column;
+  }
+  .audio-btns .dropdown-toggle.btn-rec-dropdown {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .modal .modal-footer .right-btns .btn-delete {
+    margin-left: 0;
+  }
+  .modal-questions-wrapper {
+    flex-direction: column;
+  }
+}

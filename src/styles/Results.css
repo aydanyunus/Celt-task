@@ -1,0 +1,138 @@
+.results-wrapper {
+  padding: 50px 100px;
+}
+.table-wrapper {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+}
+.table {
+  font-size: 14px;
+}
+.table th,
+td {
+  border-bottom: 1px solid #f3f6f9 !important;
+  color: #6c757d;
+}
+.table-wrapper h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.result-passed,
+.result-failed {
+  border-radius: 10px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.result-failed {
+  background: #f64e60;
+}
+.result-passed {
+  background: #1bc5bd;
+}
+
+.view-result {
+  background: #ee7100;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.view-result svg {
+  width: 16px;
+  height: 16px;
+}
+.view-result a,
+.view-result a:hover {
+  color: #ffffff;
+}
+.search-box-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+.search-box {
+  border-bottom: 1px solid #6c757d;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-box input {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.search-box .searchButton {
+  outline: none;
+  background: transparent;
+  border: none;
+  color: #6c757d;
+}
+
+.table-footer {
+  background: #ffffff;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.table-footer .current-page {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.pagination .page-item .page-link {
+  color: #ffffff;
+  background: #ee7100;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+}
+.pagination .page-item .page-link:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 575px) {
+  .table-xs-responsive th,
+  .table-xs-responsive td {
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table.table-sm-responsive th,
+  .table.table-sm-responsive td {
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .results-wrapper {
+    padding: 20px;
+  }
+  .search-box {
+    width: 100%;
+  }
+}
+
+

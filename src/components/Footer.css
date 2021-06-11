@@ -1,0 +1,21 @@
+footer {
+  background: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 15px;
+}
+
+.footer-wrapper h2 {
+  color: #000000;
+  font-size: 14px;
+}
+.copyright {
+  color: #878f96;
+  margin-right: 5px;
+}
